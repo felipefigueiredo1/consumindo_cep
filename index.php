@@ -17,7 +17,7 @@
     <form action="." method="post">
         <div class="form-group">
             <label for="CEP">CEP</label>
-            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" value="<?= $dados['cep'] ?>">
+            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" maxlength="9" value="<?= $dados['cep'] ?>">
         </div>
         <div class="form-group">
             <input type="submit" class="btn-primary" style="margin: 10px; padding: 5px;">

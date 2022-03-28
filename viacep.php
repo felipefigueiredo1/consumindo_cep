@@ -18,19 +18,15 @@ use \App\Controller\Controller;
 //Declara o numero do CEP setado no formulario
 $numero = isset($_POST['cep']) ? $_POST['cep'] : null;
 
-//Chama o controller para instanciar a classe que contem a API, se o CEP foi setado.
 if ($numero) {
+    //Chama o controller para instanciar a classe que contem a API
     $cep = new Controller;
+    //Se estiver tudo certo, retorna os dados do cep.
     if ($cep->pegarCep($numero)) {
         $dados = $cep->pegarCep($numero);
     } else {
         echo '<script>alert("Cep inválido")</script>';
     }
 }
-
-
-
-//Instancia e imprime a consulta
-
 
 
