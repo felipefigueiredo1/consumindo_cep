@@ -30,7 +30,7 @@ class Cep
         if (isset($array['cep'])) {
             return $array;
         } else {
-            return 'Cep inválido';
+            return false;
         }
 
         exit;
