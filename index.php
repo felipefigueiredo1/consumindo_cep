@@ -17,26 +17,26 @@
     <form action="." method="post">
         <div class="form-group">
             <label for="CEP">CEP</label>
-            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" maxlength="9" value="<?= $dados['cep'] ?>">
+            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" maxlength="9" value="<?= $dados['code'] ?>">
         </div>
         <div class="form-group">
             <input type="submit" class="btn-primary" style="margin: 10px; padding: 5px;">
         </div>
         <div class="form-group">
             <label for="rua">Rua</label>
-            <input type="text" class="form-control" id="rua" name="rua" value="<?= $dados['logradouro'] ?>">
+            <input type="text" class="form-control" id="rua" name="rua" value="<?= $dados['address'] ?>">
         </div>
         <div class="form-group">
             <label for="bairro">Bairro</label>
-            <input type="text" class="form-control" id="bairro" name="bairro" value="<?= $dados['bairro'] ?>">
+            <input type="text" class="form-control" id="bairro" name="bairro" value="<?= $dados['district'] ?>">
         </div>
         <div class="form-group">
             <label for="localidade">Cidade</label>
-            <input type="text" class="form-control" id="localidade" name="localidade" value="<?= $dados['localidade'] ?>">
+            <input type="text" class="form-control" id="localidade" name="localidade" value="<?= $dados['city'] ?>">
         </div>
         <div class="form-group">
             <label for="uf">UF</label>
-            <input type="text" class="form-control" id="uf" name="uf" value="<?= $dados['uf'] ?>">
+            <input type="text" class="form-control" id="uf" name="uf" value="<?= $dados['state'] ?>">
         </div>
     </form>
 </div>

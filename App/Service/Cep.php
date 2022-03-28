@@ -12,7 +12,7 @@ class Cep
         
         //Configura cURL
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://viacep.com.br/ws/{$cep}/json/",
+            CURLOPT_URL => "https://ws.apicep.com/cep/{$cep}.json",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CUSTOMREQUEST => 'GET'
         ]);
@@ -27,7 +27,7 @@ class Cep
         $array = json_decode($response, true);
 
         //Contéudo em Array, confere se o cep existe ou não na base de dados da API
-        if (isset($array['cep'])) {
+        if (isset($array['code'])) {
             return $array;
         } else {
             return false;
