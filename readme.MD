@@ -6,4 +6,5 @@
 
 <h2>Preview</h2>
 
-![consumindo-cep](https://user-images.githubusercontent.com/92311384/160596473-3b1aebe4-5008-486b-99c4-9fd136470255.png)
+![consumindo-cep](https://user-images.githubusercontent.com/92311384/160596757-48cb9d0d-2e5a-42b9-b87e-0afd4ebf84ad.png)
+
